@@ -14,19 +14,21 @@ EditText t;
 TextView b;
     TextView h;
 Button g;
+Button x;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        g=findViewById(R.id.button);
+        g=findViewById(R.id.button5);
+
 
 
 
         g.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              startActivity(new Intent(MainActivity.this,SignUpActivity.class));
+                startActivity(new Intent(MainActivity.this,SignUpActivity.class));
             }
         });
     }
